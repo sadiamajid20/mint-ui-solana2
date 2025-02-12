@@ -1,8 +1,6 @@
 "use client";
 import React from "react";
 import { WobbleCard } from "../components/ui/wobble-card";
-import phiBg from "../assets/cards/cardImg1.png";
-import linearBg from "../assets/cards/cardImg2.png";
 
 export function WobbleCardDemo() {
   return (
@@ -24,7 +22,7 @@ export function WobbleCardDemo() {
           </p>
         </div>
         <img
-          src={phiBg}
+          src="/cards/cardImg1.png" // Image from public folder
           width={500}
           height={500}
           alt="linear demo image"
@@ -37,9 +35,6 @@ export function WobbleCardDemo() {
           Preserving Creativity, Inspiring Generations: A Movement for Art and
           Artists.
         </h2>
-        {/* <p className="mt-4 max-w-[26rem] text-left text-base/6 text-neutral-200">
-          If someone yells “stop!”, goes limp, or taps out, the fight is over.
-        </p> */}
       </WobbleCard>
 
       <WobbleCard containerClassName="jura-font col-span-1 lg:col-span-3 bg-[#3c1642] min-h-[500px] lg:min-h-[600px] xl:min-h-[300px]">
@@ -69,7 +64,7 @@ export function WobbleCardDemo() {
           </p>
         </div>
         <img
-          src={linearBg}
+          src="/cards/cardImg2.png" // Image from public folder
           width={500}
           height={500}
           alt="linear demo image"

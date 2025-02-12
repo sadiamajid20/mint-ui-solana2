@@ -101,7 +101,7 @@ const MintNFT: React.FC = () => {
 
   return (
     <>
-    
+
       <Head>
         <title>Mint NFT</title>
         <meta name="description" content="Mint your unique NFT now!" />
@@ -125,11 +125,13 @@ const MintNFT: React.FC = () => {
             <button
               disabled={!wallet.publicKey || isLoading}
               onClick={mint}
-              className="mt-4 w-full bg-green-500 text-black font-bold py-2 px-4 rounded hover:bg-green-600 transition disabled:bg-gray-500 disabled:cursor-not-allowed"
+              className="mt-8 w-full bg-green-500 text-black font-bold py-2 px-4 rounded hover:bg-green-600 transition disabled:bg-gray-500 disabled:cursor-not-allowed"
             >
               {isLoading ? "Minting..." : "Mint"}
             </button>
-            <WalletMultiButton className="w-full mt-3" />
+            <div className="item-center">
+            <WalletMultiButton className="w-full mt-4 bg-green item-center" />
+            </div>
             <p className="text-center text-sm text-gray-300 mt-2">{formMessage}</p>
           </div>
         </div>

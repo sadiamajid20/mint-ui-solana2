@@ -19,7 +19,7 @@ import { transactionBuilder, generateSigner } from "@metaplex-foundation/umi";
 import { useWallet } from "@solana/wallet-adapter-react";
 import { WalletMultiButton } from "@solana/wallet-adapter-react-ui";
 import Head from "next/head";
-import { fromTxError } from "@/utils/errors";
+import { fromTxError } from "../utils/errors";
 
 if (!process.env.NEXT_PUBLIC_RPC_ENDPOINT) {
   throw new Error("No RPC endpoint. Please, provide a NEXT_PUBLIC_RPC_ENDPOINT env variable");
@@ -101,6 +101,7 @@ const MintNFT: React.FC = () => {
 
   return (
     <>
+    
       <Head>
         <title>Mint NFT</title>
         <meta name="description" content="Mint your unique NFT now!" />

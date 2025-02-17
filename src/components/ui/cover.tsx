@@ -1,7 +1,18 @@
 import { motion, SVGMotionProps } from "framer-motion";
-import React from "react";
+import React, { ReactNode } from "react";
 import { cn } from "./utils";
 
+// ✅ Define the `Cover` component
+interface CoverProps {
+  children: ReactNode;
+  className?: string;
+}
+
+export const Cover: React.FC<CoverProps> = ({ children, className = "" }) => {
+  return <span className={cn("text-blue-500 font-bold", className)}>{children}</span>;
+};
+
+// ✅ Define and export `Beam`
 interface BeamProps extends SVGMotionProps<SVGSVGElement> {
   className?: string;
   duration?: number;

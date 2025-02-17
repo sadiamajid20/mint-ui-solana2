@@ -4,7 +4,7 @@ import { cn } from "./utils";
 
 interface BeamProps extends SVGMotionProps<SVGSVGElement> {
   className?: string;
-  duration: number;
+  duration?: number;
   delay?: number;
   hovered: boolean;
   width?: number;
@@ -12,13 +12,14 @@ interface BeamProps extends SVGMotionProps<SVGSVGElement> {
 
 export const Beam: React.FC<BeamProps> = ({
   className = "",
-  duration,
+  duration = 2,
   delay = 0,
   hovered,
   width = 600,
   initial,
   animate,
   transition,
+  ...props
 }) => {
   const id = React.useId();
 
@@ -30,9 +31,10 @@ export const Beam: React.FC<BeamProps> = ({
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       className={cn("absolute inset-x-0 w-full", className)}
-      initial={initial} // ✅ Pass motion props explicitly
+      initial={initial}
       animate={animate}
       transition={transition}
+      {...props}
     >
       <motion.path d={`M0 0.5H${width}`} stroke={`url(#svgGradient-${id})`} />
       <defs>

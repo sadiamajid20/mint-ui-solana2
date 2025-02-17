@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import React, { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import Image from "next/image";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -14,25 +15,43 @@ const Navbar = () => {
       <div className="flex justify-between items-center py-2 px-6">
         {/* Left Links - Hidden on mobile, visible on medium screens and up */}
         <div className="hidden md:flex space-x-4 jura-font">
-          <a href="#" className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
+          <a
+            href="#"
+            className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+          >
             ABOUT
           </a>
-          <a href="#" className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
+          <a
+            href="#"
+            className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+          >
             ACHIEVE
           </a>
         </div>
 
         {/* Centered Logo */}
         <div className="text-white text-2xl font-bold">
-          <img src="/logo.png" alt="YourLogo" className="h-12" />
+          <Image
+            src="/logo.png"
+            alt="YourLogo"
+            width={48} // Adjust width as needed
+            height={48} // Adjust height as needed
+            priority // Ensures faster loading of logo
+          />
         </div>
 
         {/* Right Links - Hidden on mobile, visible on medium screens and up */}
         <div className="hidden md:flex space-x-4 jura-font">
-          <a href="#" className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
+          <a
+            href="#"
+            className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+          >
             YOUR PIE
           </a>
-          <a href="#" className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
+          <a
+            href="#"
+            className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+          >
             FAQ
           </a>
         </div>
@@ -77,7 +96,7 @@ const Navbar = () => {
             initial={{ opacity: 0, y: -20 }} // Start slightly above and invisible
             animate={{ opacity: 1, y: 0 }} // Animate to fully visible and in place
             exit={{ opacity: 0, y: -20 }} // Animate out by moving up and fading out
-            transition={{ duration: 0.3, ease: 'easeInOut' }} // Smooth transition
+            transition={{ duration: 0.3, ease: "easeInOut" }} // Smooth transition
             className="md:hidden px-2 pt-2 pb-3 space-y-1 sm:px-3"
           >
             <a

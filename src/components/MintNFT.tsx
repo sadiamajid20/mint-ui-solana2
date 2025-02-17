@@ -61,8 +61,9 @@ const MintNFT: React.FC = () => {
           ? `${Number(solPaymentGuard.lamports.basisPoints) / 1e9} SOL`
           : "Free mint"
         : "...",
-    [candyGuard]
+    [candyGuard, solPaymentGuard] // ✅ Added solPaymentGuard to dependencies
   );
+  
 
   const mint = async () => {
     if (!candyMachine) throw new Error("No candy machine");

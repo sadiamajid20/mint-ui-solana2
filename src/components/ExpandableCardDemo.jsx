@@ -28,7 +28,7 @@ export function ExpandableCardDemo() {
   useOutsideClick(ref, () => setActive(null));
 
   return (
-    <div className="flex flex-col md:flex-row md:px-24 px-2">
+    <div className="flex flex-col md:flex-row md:px-24 px-4">
       {/* Left Side Column */}
       <div className="w-full md:w-2/3">
         <AnimatePresence>

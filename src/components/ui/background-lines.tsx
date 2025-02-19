@@ -16,7 +16,7 @@ export const BackgroundLines: React.FC<BackgroundLinesProps> = ({
 }) => {
   return (
     (<div
-      className={cn("h-[20rem] md:h-screen w-full bg-white dark:bg-black", className)}>
+      className={cn("h-[20rem] md:h-screen w-full ", className)}>
       <SVG svgOptions={svgOptions} />
       {children}
     </div>)

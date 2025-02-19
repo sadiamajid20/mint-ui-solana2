@@ -130,8 +130,8 @@ const MintNFT: React.FC = () => {
             >
               {isLoading ? "Minting..." : "Mint"}
             </button>
-            <div className="item-center">
-            <WalletMultiButton className="w-full mt-4 bg-green item-center" />
+            <div className="justify-center flex  mt-4 w-full ">
+            <WalletMultiButton className="mt-12 bg-green item-center" />
             </div>
             <p className="text-center text-sm text-gray-300 mt-2">{formMessage}</p>
           </div>

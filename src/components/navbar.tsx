@@ -34,7 +34,7 @@ const Navbar = () => {
           <Image
             src="/logo.png"
             alt="YourLogo"
-            width={48} // Adjust width as needed
+            width={88} // Adjust width as needed
             height={48} // Adjust height as needed
             priority // Ensures faster loading of logo
           />

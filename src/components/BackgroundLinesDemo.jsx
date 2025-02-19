@@ -10,8 +10,8 @@ export function BackgroundLinesDemo() {
 
   return (
     <>
-      <BackgroundLines className=" items-center  w-full z-50">
-        <div className="relative h-100vh pt-30 md:pt-0">
+      <BackgroundLines className=" items-center  w-full ">
+        <div className="relative h-100vh pt-30 md:pt-10">
           <p className="jura-font md:text-4xl text-lg  pt-[15%] text-white text-center">
             Street Art Awakening
           </p>
@@ -19,7 +19,7 @@ export function BackgroundLinesDemo() {
         <div>
           <CoverDemo />
         </div>
-        <div className="flex justify-center pt-4">
+        <div className="flex justify-center pt-4 z-10">
           <CountdownTimer />
         </div>
         {/* <BtnOne /> */}

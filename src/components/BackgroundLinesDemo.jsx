@@ -22,7 +22,6 @@ export function BackgroundLinesDemo() {
         <div className="flex justify-center pt-4 z-10">
           <CountdownTimer />
         </div>
-        {/* <BtnOne /> */}
         <div className="absolute inset-0 bg-[url('/phi-bg.png')] bg-cover bg-center -z-10 "></div>
       </BackgroundLines>
     </>

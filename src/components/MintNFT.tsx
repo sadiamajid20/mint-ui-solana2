@@ -1,13 +1,15 @@
 "use client";
 
-import React, { useCallback, useEffect, useMemo, useState } from "react";
+import React, { useCallback, useEffect, useState } from "react";
+// import  { useMemo } from "react";
 import { createUmi } from "@metaplex-foundation/umi-bundle-defaults";
 import {
   CandyGuard,
   CandyMachine,
   mplCandyMachine,
 } from "@metaplex-foundation/mpl-candy-machine";
-import { publicKey, unwrapOption } from "@metaplex-foundation/umi"; // ✅ Removed 'some'
+import { publicKey } from "@metaplex-foundation/umi"; 
+// import {  unwrapOption } from "@metaplex-foundation/umi"; 
 import {
   fetchCandyMachine,
   fetchCandyGuard,
@@ -50,19 +52,19 @@ const MintNFT: React.FC = () => {
     fetchCandyMachineData();
   }, [fetchCandyMachineData]);
 
-  const solPaymentGuard = useMemo(() => {
-    return candyGuard ? unwrapOption(candyGuard.guards.solPayment) : null;
-  }, [candyGuard]);
+  // const solPaymentGuard = useMemo(() => {
+  //   return candyGuard ? unwrapOption(candyGuard.guards.solPayment) : null;
+  // }, [candyGuard]);
 
-  const cost = useMemo(
-    () =>
-      candyGuard
-        ? solPaymentGuard
-          ? `${Number(solPaymentGuard.lamports.basisPoints) / 1e9} SOL`
-          : "Free mint"
-        : "...",
-    [candyGuard, solPaymentGuard] // ✅ Added solPaymentGuard to dependencies
-  );
+  // const cost = useMemo(
+  //   () =>
+  //     candyGuard
+  //       ? solPaymentGuard
+  //         ? `${Number(solPaymentGuard.lamports.basisPoints) / 1e9} SOL`
+  //         : "Free mint"
+  //       : "...",
+  //   [candyGuard, solPaymentGuard] 
+  // );
   
 
   const mint = async () => {
@@ -118,7 +120,8 @@ const MintNFT: React.FC = () => {
           <div className="bg-gray-800 p-4 rounded-lg w-full">
             <div className="flex justify-between text-white">
               <span>Public</span>
-              <b>{cost}</b>
+              {/* <b>{cost}</b> */}
+              <b>1.9 SOL</b>
             </div>
             <div className="flex justify-between text-xs text-gray-400 mt-1">
               <span>Live</span>

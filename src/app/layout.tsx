@@ -22,28 +22,28 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <link rel="icon" href="/phi-logo-transparent.png" />
       </head>
       <body>
-        <div>
+        <div id="navbar">
           <Navbar />
         </div>
-        <div className="h-screen">
+        <div id="background" className="h-screen">
           <BackgroundLinesDemo />
         </div>
-        <div className="w-full">
+        <div id="scroll-section" className="w-full">
           <ScrollSection />
         </div>
-        <div className="bg-black">
+        <div id="wobble-card" className="bg-black">
           <WobbleCardDemo />
         </div>
-        <div className="bg-black">
+        <div id="wallet-provider" className="bg-black">
           <WalletProvider>{children}</WalletProvider>
         </div>
-        <div>
+        <div id="timeline">
           <TimelineDemo />
         </div>
-        <div className="bg-black py-24">
+        <div id="expandable-card" className="bg-black py-24">
           <ExpandableCardDemo />
         </div>
-        <div>
+        <div id="footer">
           <Footer />
         </div>
       </body>

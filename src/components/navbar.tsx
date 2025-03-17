@@ -16,13 +16,13 @@ const Navbar = () => {
         {/* Left Links - Hidden on mobile, visible on medium screens and up */}
         <div className="hidden md:flex space-x-4 jura-font">
           <a
-            href="#"
+            href="#scroll-section"
             className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
           >
             ABOUT
           </a>
           <a
-            href="#"
+            href="#wobble-card"
             className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
           >
             ACHIEVE
@@ -43,13 +43,13 @@ const Navbar = () => {
         {/* Right Links - Hidden on mobile, visible on medium screens and up */}
         <div className="hidden md:flex space-x-4 jura-font">
           <a
-            href="#"
+            href="#wallet-provider"
             className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
           >
             YOUR PIE
           </a>
           <a
-            href="#"
+            href="#expandable-card"
             className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
           >
             FAQ
@@ -100,25 +100,25 @@ const Navbar = () => {
             className="md:hidden px-2 pt-2 pb-3 space-y-1 sm:px-3"
           >
             <a
-              href="#"
+              href="#scroll-section"
               className="block text-gray-300 hover:text-white px-3 py-2 rounded-md text-base jura-font font-medium"
             >
               ABOUT
             </a>
             <a
-              href="#"
+              href="#wobble-card"
               className="block text-gray-300 hover:text-white px-3 py-2 rounded-md text-base jura-font font-medium"
             >
               ACHIEVE
             </a>
             <a
-              href="#"
+              href="#wallet-provider"
               className="block text-gray-300 hover:text-white px-3 py-2 rounded-md text-base jura-font font-medium"
             >
               YOUR PIE
             </a>
             <a
-              href="#"
+              href="#expandable-card"
               className="block text-gray-300 hover:text-white px-3 py-2 rounded-md text-base jura-font font-medium"
             >
               FAQ

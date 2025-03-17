@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import './ui/fonts.css';
 
-const CountdownTimer = ({ targetDate = "2026-01-01T00:00:00Z" }) => {
+const CountdownTimer = ({ targetDate = "2025-04-07T00:00:00Z" }) => {
   if (!targetDate) {
     throw new Error("targetDate is required");
   }

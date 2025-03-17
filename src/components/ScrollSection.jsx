@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 const ScrollSection = () => {
   // Break the content into smaller sections
   const fullText = [
+    
     "  Phi (1966–2012) was a visionary French street artist known for his vibrant and whimsical creations that transformed urban spaces across cities like Toulon, Marseille, and Paris. His art often featured playful characters—soaring songbirds, mischievous mice, enigmatic earthworms, and carefree cats—all part of his imaginary world, Pamparigouste. With his unique blend of humor, creativity, and imagination, Phi brought joy and wonder to city streets, turning everyday urban landscapes into magical realms.",
     "  A true pioneer of street art, Phi had a gift for creating characters that resonated with people of all ages. His work wasn’t just about the visual impact—it was about storytelling, building worlds within walls, and inviting passersby to step into his dreamlike vision. His art became a hallmark of spontaneity and imagination, offering a whimsical escape from the everyday grind.",
     "  Though Phi passed away in 2012, his artistic legacy lives on through this NFT project. We aim to preserve and celebrate his work by bringing it into the digital age, ensuring that his playful imagination and spirit of creativity continue to inspire generations to come.",

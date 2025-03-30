@@ -47,7 +47,7 @@ function Footer() {
           </div>
         </nav>
         <div class="flex justify-center mt-8 space-x-6">
-          <a href="#" class="text-gray-400 hover:text-gray-500">
+          <a href="https://www.facebook.com/people/The-Birds-of-Pamparigouste/61572767220850/?name=xhp_nt__fb__action__open_user" class="text-gray-400 hover:text-gray-500">
             <span class="sr-only">Facebook</span>
             <svg
               class="w-6 h-6"
@@ -77,7 +77,7 @@ function Footer() {
               ></path>
             </svg>
           </a>
-          <a href="#" class="text-gray-400 hover:text-gray-500">
+          <a href="https://x.com/nftproject_phi" class="text-gray-400 hover:text-gray-500">
             <span class="sr-only">Twitter</span>
             <svg
               class="w-6 h-6"

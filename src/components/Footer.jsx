@@ -7,7 +7,7 @@ function Footer() {
         <nav class="flex flex-wrap jura-font justify-center -mx-5 -my-2">
           <div class="px-5 py-2">
             <a
-              href="#"
+              href="https://www.thebirdsofpamparigouste.com/"
               class="text-base leading-6 text-gray-500 hover:text-gray-300"
             >
               HOME
@@ -15,7 +15,7 @@ function Footer() {
           </div>
           <div class="px-5 py-2">
             <a
-              href="#"
+              href="https://www.thebirdsofpamparigouste.com/#scroll-section"
               class="text-base leading-6 text-gray-500 hover:text-gray-300"
             >
               ABOUT
@@ -23,7 +23,7 @@ function Footer() {
           </div>
           <div class="px-5 py-2">
             <a
-              href="#"
+              href="https://www.thebirdsofpamparigouste.com/#wobble-card"
               class="text-base leading-6 text-gray-500 hover:text-gray-300"
             >
               ACHIEVE
@@ -31,7 +31,7 @@ function Footer() {
           </div>
           <div class="px-5 py-2">
             <a
-              href="#"
+              href="https://www.thebirdsofpamparigouste.com/#wallet-provider"
               class="text-base leading-6 text-gray-500 hover:text-gray-300"
             >
               YOUR PIE
@@ -39,7 +39,7 @@ function Footer() {
           </div>
           <div class="px-5 py-2">
             <a
-              href="#"
+              href="https://www.thebirdsofpamparigouste.com/#expandable-card"
               class="text-base leading-6 text-gray-500 hover:text-gray-300"
             >
               FAQ

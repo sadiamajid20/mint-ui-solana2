@@ -103,7 +103,7 @@ function Footer() {
               ></path>
             </svg>
           </a>
-          <a href="https://mint-ui-solana.vercel.app/" class="text-gray-400 hover:text-gray-500">
+          <a href="https://thebirdsofpamparigouste.com/#wobble-card" class="text-gray-400 hover:text-gray-500">
             <span class="sr-only">Dribbble</span>
             <svg
               class="w-6 h-6"

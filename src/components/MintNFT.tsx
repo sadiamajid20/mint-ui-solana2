@@ -51,22 +51,22 @@ const MintNFT: React.FC = () => {
   useEffect(() => {
     fetchCandyMachineData();
   }, [fetchCandyMachineData]);
+----------
+  const solPaymentGuard = useMemo(() => {
+    return candyGuard ? unwrapOption(candyGuard.guards.solPayment) : null;
+  }, [candyGuard]);
 
-  // const solPaymentGuard = useMemo(() => {
-  //   return candyGuard ? unwrapOption(candyGuard.guards.solPayment) : null;
-  // }, [candyGuard]);
-
-  // const cost = useMemo(
-  //   () =>
-  //     candyGuard
-  //       ? solPaymentGuard
-  //         ? `${Number(solPaymentGuard.lamports.basisPoints) / 1e9} SOL`
-  //         : "Free mint"
-  //       : "...",
-  //   [candyGuard, solPaymentGuard] 
-  // );
+  const cost = useMemo(
+    () =>
+      candyGuard
+        ? solPaymentGuard
+          ? `${Number(solPaymentGuard.lamports.basisPoints) / 1e9} SOL`
+          : "Free mint"
+        : "...",
+    [candyGuard, solPaymentGuard] 
+  );
   
-
+---------
   const mint = async () => {
     if (!candyMachine) throw new Error("No candy machine");
     if (!candyGuard) throw new Error("No candy guard found. Set up a guard for your candy machine.");

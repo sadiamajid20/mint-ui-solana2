@@ -79,7 +79,7 @@ const MintNFT: React.FC = () => {
     try {
       await transactionBuilder()
         .add(setComputeUnitLimit(umiWalletAdapter, { units: 800_000 }))
-        .add(   print'yes';
+        .add(  
           mintV2(umiWalletAdapter, {
             candyMachine: candyMachine.publicKey,
             nftMint,

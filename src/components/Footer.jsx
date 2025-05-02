@@ -89,7 +89,7 @@ function Footer() {
             </svg>
           </a>
           <a href="https://github.com/sadiamajid20/mint-ui-solana" class="text-gray-400 hover:text-gray-500">
-            <span class="sr-only">GitHub </span>
+            <span class="sr-only">GitHub</span>
             <svg
               class="w-6 h-6"
               aria-hidden="true"

@@ -103,7 +103,7 @@ function Footer() {
               ></path>
             </svg>
           </a>
-          <a href="#" class="text-gray-400 hover:text-gray-500">
+          <a href="https://www" class="text-gray-400 hover:text-gray-500">
             <span class="sr-only">Dribbble</span>
             <svg
               class="w-6 h-6"
